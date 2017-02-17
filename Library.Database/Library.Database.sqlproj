@@ -59,9 +59,18 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
+    <Folder Include="Programmability" />
+    <Folder Include="Programmability\Stored procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Books.sql" />
     <Build Include="dbo\Tables\Borrows.sql" />
+    <Build Include="Programmability\Stored procedures\CreateBook.sql" />
+    <Build Include="Programmability\Stored procedures\GetAllBooks.sql" />
+    <Build Include="Programmability\Stored procedures\RemoveBook.sql" />
+    <Build Include="Programmability\Stored procedures\SearchBook.sql" />
+    <Build Include="Programmability\Stored procedures\BorrowBook.sql" />
+    <Build Include="Programmability\Stored procedures\ReturnBook.sql" />
+    <Build Include="Programmability\Stored procedures\GetBorrowsHistory.sql" />
   </ItemGroup>
 </Project>

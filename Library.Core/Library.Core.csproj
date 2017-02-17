@@ -31,7 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,9 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BookRepositoryAsync.cs" />
+    <Compile Include="BorrowAction.cs" />
+    <Compile Include="HistoryAction.cs" />
+    <Compile Include="IBookRepositoryAsync.cs" />
+    <Compile Include="IBookAction.cs" />
+    <Compile Include="Models\BookDto.cs" />
+    <Compile Include="Models\BorrowsHistoryDto.cs" />
     <Compile Include="Models\Genres.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnAction.cs" />
+    <Compile Include="Utilities\DataGridViewHelper.cs" />
+    <Compile Include="Utilities\BookExtension.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
